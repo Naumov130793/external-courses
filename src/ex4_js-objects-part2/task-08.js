@@ -9,5 +9,5 @@ function upperCase(word){
     console.log(newString)
     };
     
-    var string=" heLlo edUard nauMov";
+    var string="heLlo edUard nauMov";
     upperCase(string);
