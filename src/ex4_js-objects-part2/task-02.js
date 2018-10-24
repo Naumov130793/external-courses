@@ -1,6 +1,6 @@
 function createNewObject(){
     var obj=Object.create(null);
-    console.log(obj);
+    return obj;
     }
     
-    createNewObject();
+    console.log(createNewObject());
