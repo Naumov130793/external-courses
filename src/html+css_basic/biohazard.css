@@ -1,0 +1,9 @@
+.biohazard{
+    width:0;height:0;
+    border:60px solid;
+    border-radius:50%;
+    border-top-color:black;
+    border-bottom-color:black;
+    border-left-color:yellow;
+    border-right-color:yellow;
+    }

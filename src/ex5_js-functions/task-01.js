@@ -79,7 +79,6 @@ var calculator=function(){
     },resetResult:function(){
     result=0;
     }}}
-    
     var calculator=calculator();
     calculator.add(5)(3)(2);
     calculator.subtract(2)(3);
