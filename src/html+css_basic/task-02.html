@@ -1,76 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <meta name="description" content="РџРµСЂРІС‹Р№ РґРѕРєСѓРјРµРЅС‚ html">
-      <title>  РџРµСЂРІР°СЏ СЃС‚СЂР°РЅРёС†Р°  </title>
+      <meta name="description" content="Первый документ html">
+      <title>  Первая страница  </title>
 </head>
 
 
 
 <body>
-<h1>
-HTML Basics
-</h1>
-<h2>
-Lists
-</h2>
-<h3>
-Ordered list
-</h3>
-<ol>
-<li>first item</li>
-<li>second item</li>
-<li>third item</li>
-<li>fourth item</li>
-<li>fifth item</li>
-</ol>
-<h4>
-Unordered list
-</h4>
-<ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-<li>D</li>
-<li>E</li>
-</ul>
-<div style="background-color:#00FF00">
-<h5>
-Description List
-</h5>
-<pre>
-Name
-    Godzilla
-Birthplace
-    Japan
-Color
-    Green
-</pre>
-<h6><b>
-Nested List
-</b></h6>
-<ul>
-<li>List item one</li>
-<li>List item two with subitems</li>
-<ul type="circle">
-<li>Subitem1</li>
-<ul type="square">
-<li>SubSubItem1</li>
-<li>SubSubItem2</li>
-</ul>
-<li>Subitem2</li>
-</ul>
-<li>Final list item</li>
-</ul>
-</div>
-<h7><b>
-List with links
-</b></h7>
-<ul>
-<li><a href="https://www.google.ru/">Р“СѓРіР»</a></li>
-<li><a href="https://www.yandex.ru/">РЇРЅРґРµРєСЃ</a></li>
-<li><a href="https://www.color-hex.com/color/00ff00">Color</a></li>
-</ul>
+      <h1>HTML Basics</h1>
+      <h2>Lists</h2>
+      <h3>Ordered list</h3>
+      <ol>
+          <li>first item</li>
+          <li>second item</li>
+          <li>third item</li>
+          <li>fourth item</li>
+          <li>fifth item</li>
+      </ol>
+      <h4>Unordered list</h4>
+      <ul>
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
+          <li>E</li>
+      </ul>
+      <div style="background-color:#00FF00">
+          <h5>Description List</h5>
+          <dl>
+             <dt>Name</dt>
+             <dd>Godzilla</dd>
+          </dl>
+          <dl>
+             <dt>Birthplace</dt>
+             <dd>Japan</dd>
+         </dl>
+          <dl>
+             <dt>Color</dt>
+             <dd>Green</dd>
+         </dl>
+
+     <h6><b>Nested List</b></h6>
+        <ul>
+          <li>List item one</li>
+          <li>List item two with subitems</li>
+          <ul type="circle">
+          <li>Subitem1</li>
+          <ul type="square">
+          <li>SubSubItem1</li>
+          <li>SubSubItem2</li>
+        </ul>
+          <li>Subitem2</li>
+        </ul>
+          <li>Final list item</li>
+       </ul>
+     </div>
+<h7><b>List with links</b></h7>
+       <ul>
+          <li><a href="https://www.google.ru/">Гугл</a></li>
+          <li><a href="https://www.yandex.ru/">Яндекс</a></li>
+          <li><a href="https://www.color-hex.com/color/00ff00">Color</a></li>
+      </ul>
 <hr/>
 <h8><b>
 Paragraphs
@@ -117,7 +108,7 @@ Image
 <br/>
 </b></h10>
 <br/>
-<img src="http://www.vokrugsveta.ru/img/bx/iblock/fad/fad38c58d472ef955fd919766dc15dd1.jpg" width="200" height="300" alt="РџСЂРёС€РµР»РµС†" title="Р­С‚Рѕ РїСЂРёС€РµР»РµС†" />
+<img src="http://www.vokrugsveta.ru/img/bx/iblock/fad/fad38c58d472ef955fd919766dc15dd1.jpg" width="200" height="300" alt="Пришелец" title="Это пришелец" />
 <br/>
 <hr/>
 <h11><b>
@@ -125,9 +116,9 @@ Pre Tag
 </b></h11>
 <pre>
 var obj = {};
-obj.test = undefined; // РґРѕР±Р°РІРёР»Рё СЃРІРѕР№СЃС‚РІРѕ СЃРѕ Р·РЅР°С‡РµРЅРёРµРј undefined
+obj.test = undefined; // добавили свойство со значением undefined
 
-// РїСЂРѕРІРµСЂРёРј РЅР°Р»РёС‡РёРµ СЃРІРѕР№СЃС‚РІ test Рё Р·Р°РІРµРґРѕРјРѕ РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‰РµРіРѕ blabla
+// проверим наличие свойств test и заведомо отсутствующего blabla
 alert( obj.test === undefined ); // true
 alert( obj.blabla === undefined ); // true
 </pre>
