@@ -1,0 +1,22 @@
+.frames2{ 
+position: absolute; 
+top:400px; 
+left:100px; 
+width:20%; 
+height:200px; 
+background: #60B88D; 
+} 
+.class1{position: absolute; 
+top:410px; 
+left:110px; 
+width:20%; 
+height:200px; 
+background: #90CDAF; 
+} 
+.class2{position: absolute; 
+top:420px; 
+left:120px; 
+width:20%; 
+height:200px; 
+background: #BFE3D1; 
+}

@@ -1,0 +1,48 @@
+.button{
+width:200px;
+height:100px;
+background:white;
+border-radius:30px;
+position:absolute;
+top:400px;
+bottom:400px;
+left:700px;
+border:2px solid black;
+}
+
+.button2{
+width:190px;
+height:90px;
+background:lightGrey;
+border-radius:20px;
+position:relative;
+top:5px;
+bottom:5px;
+left:5px;
+right:5px;
+}
+
+.button3{
+width:170px;
+height:70px;
+background:linear-gradient(to top,dimGrey,silver);
+border-radius:20px;
+position:relative;
+top:10px;
+bottom:10px;
+left:10px;
+right:10px;
+box-shadow:0 0 20px black;
+}
+
+.text{
+font:bold 150% sans-serif;
+position:relative;
+display:flex;
+justify-content:center;
+top:20px;
+}
+
+.grayscale{
+filter:grayscale(100%);
+}

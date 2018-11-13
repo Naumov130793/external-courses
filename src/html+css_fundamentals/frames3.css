@@ -1,0 +1,27 @@
+.frames3{ 
+position: absolute; 
+top:700px; 
+left:100px; 
+width:20%; 
+height:200px; 
+background: #60B88D; 
+z-index:3 
+} 
+.frames3-1{ 
+position: absolute; 
+top:710px; 
+left:110px; 
+width:20%; 
+height:200px; 
+background: #90CDAF; 
+z-index:2; 
+} 
+.frames3-2{ 
+position: absolute; 
+top:720px; 
+left:120px; 
+width:20%; 
+height:200px; 
+background: #BFE3D1; 
+z-index:1; 
+}
