@@ -1,14 +1,14 @@
 var shape = {
   type: "rectangular",
-  perimetr: 40,
+  perimeter: 40,
   getType: function() {
     console.log(this.type);
   },
-  getPerimetr: function() {
-    console.log(this.perimetr);
+  getPerimeter: function() {
+    console.log(this.perimeter);
   },
   draw: function() {
-    console.log(this.type) + " " + console.log(this.perimetr);
+    console.log(this.type) + " " + console.log(this.perimeter);
   }
 };
 
@@ -17,9 +17,9 @@ var triangle = function(a, b, c) {
   this.a = a;
   this.b = b;
   this.c = c;
-  this.perimetr = a + b + c;
+  this.perimeter = a + b + c;
   this.getSides = function() {
-    console.log("a: " + this.a + "b: " + this.b + "c: " + this.c);
+    console.log("a: " + this.a + " b: " + this.b + " c: " + this.c);
   };
   this.__proto__ = shape;
   console.log(this.__proto__);
@@ -30,19 +30,19 @@ var square = function(a, b, c) {
   this.a = a;
   this.b = b;
   this.c = c;
-  this.perimetr = a + b + c;
+  this.perimeter = a + b + c;
   this.getSides = function() {
     console.log("a: " + this.a + "b: " + this.b + "c: " + this.c);
   };
-  this.d = this.perimetr;
+  this.d = this.perimeter;
   this.__proto__ = shape;
 };
 
 var round = function(radius) {
   this.getSides = undefined;
   triangle.call(this);
-  this.perimetr = 2 * 3.14 * radius;
-  this.a, this.b, (this.c = undefined);
+  this.perimeter = 2 * 3.14 * radius;
+  this.a, this.b, this.c = undefined;
   this.getArea = function() {
     console.log("Round's area is " + 2 * 3.14 * radius);
   };
@@ -50,7 +50,7 @@ var round = function(radius) {
 
 var newRound = new round(5.3);
 newRound.getSides();
-newRound.getPerimetr();
+newRound.getPerimeter();
 newRound.getArea();
 
 
