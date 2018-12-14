@@ -1,0 +1,278 @@
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+
+.wrap:hover{
+transform:scale(2);
+}
+
+.wrap{
+	position:relative;
+	left:50%;
+	top:10%;
+	border:4px dashed green;
+	width:90px;
+	height:90px;
+	border-radius:50%;
+	transition:transform 1s ease-out;
+}
+
+@keyframes rotate{
+0%{transform:rotate(0deg);}
+50%{transform:rotate(180deg);}
+100%{transform:rotate(360deg);}
+}
+
+
+.loader2{
+	position:absolute;
+	left:6%;
+	top:6%;
+	border:4px dashed peru;
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	box-shadow: 0 0 10px 5px royalblue;
+    animation:rotate 4s infinite ease-out;
+}
+
+
+
+
+.loader{
+	position:relative;
+	left:60%;
+	top:2%;
+	border:4px solid black;
+	width:150px;
+	height:150px;
+	border-radius:30px;
+	box-shadow: 0 0 0 5px royalblue;
+	transition:transform 40s;
+}
+
+.loader:hover{
+	transform:rotate(14400deg);
+}
+
+
+@keyframes move{
+	from{
+		left:0;
+		bottom:25px;
+	}
+	50%{
+		left:140px;
+		bottom:25px;
+	}
+	to{
+		left:0px;
+		bottom:25px;
+	}
+}
+
+.load{
+	position:absolute;
+	width:7px;
+	height:7px;
+	border-radius:50%;
+	background: #FA8072;
+	animation:move 4s infinite ease-out;
+}
+
+
+.load:nth-child(2){
+	animation-delay:.1s;
+	background: #FF0000;
+}
+.load:nth-child(3){
+	animation-delay:.2s;
+	background: #B22222;
+}
+.load:nth-child(4){
+	animation-delay:.3s;
+	background: #A52A2A;
+}
+.load:nth-child(5){
+	animation-delay:.4s;
+	background: #FF4500;
+}
+.load:nth-child(6){
+	animation-delay:.5s;
+	background: #FF7F50;
+}
+.load:nth-child(7){
+	animation-delay:.6s;
+	background: #FF0000;
+}
+
+
+
+
+
+
+.line{
+	border-top:10px solid black;
+	border-bottom:10px solid black;
+	position:relative;
+	width:200px;
+	height:200px;
+	left:50%;
+	top:25%;
+}
+
+
+@keyframes ball{
+	from{
+		left:100px;
+		bottom:0px;
+	}
+	50%{
+		left:100px;
+		bottom:190px;
+	}
+	to{
+		left:100px;
+		bottom:0px;
+	}
+}
+
+.jump{
+	position:absolute;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background: red;
+	animation:ball 2s infinite linear;
+}
+
+
+
+
+
+.animation{
+	border:10px solid black;
+	position:relative;
+	width:300px;
+	height:200px;
+	left:50%;
+	top:40%;
+}
+
+@keyframes anim{
+	from{
+		left:30px;
+		bottom:100px;
+	}
+	10%{
+		left:60px;
+		bottom:100px;
+	}
+	20%{
+		left:90px;
+		bottom:100px;
+	}
+	30%{
+		left:120px;
+		bottom:100px;
+	}
+	40%{
+		left:150px;
+		bottom:100px;
+	}
+	50%{
+		left:180px;
+		bottom:100px;
+	}
+	60%{
+		left:210px;
+		bottom:100px;
+	}
+	70%{
+		left:240px;
+		bottom:100px;
+	}
+	80%{
+		left:270px;
+		bottom:100px;
+	}
+	90%{
+		left:275px;
+		bottom:100px;
+	}
+	to{
+		left:10px;
+		bottom:100px;
+	}
+
+}
+
+
+
+
+.pictures{
+	position:absolute;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background: linear-gradient(45deg, blue, red);
+	animation:anim 8s infinite linear;
+}
+
+
+.pictures:nth-child(2){
+	position:absolute;
+	width:15px;
+	height:15px;
+	border-radius:0%;
+	background: red;
+	animation-delay:1s;
+}
+.pictures:nth-child(3){
+	position:absolute;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background: linear-gradient(45deg, red, blue);
+	animation-delay:2s;
+}
+
+.pictures:nth-child(4){
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:30%;
+	background: linear-gradient(45deg, red, blue);
+	animation-delay:3s;
+}
+.pictures:nth-child(5){
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:30%;
+	background: linear-gradient(45deg, red, blue);
+	animation:anim 8s 4s infinite linear,rotate 4s infinite linear;
+	
+}
+
+.pictures:nth-child(6){
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:30%;
+	background: linear-gradient(60deg, green, yellow);
+	animation-delay:5s;
+}
+.pictures:nth-child(7){
+	position:absolute;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background: green;
+	animation-delay:6s;
+}
+
+

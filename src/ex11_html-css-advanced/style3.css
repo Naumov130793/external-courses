@@ -1,0 +1,63 @@
+.Input {
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+ body,html{
+     height:100%;
+     width:100%;
+     }
+
+
+.Input-text {
+  display: block;
+  margin: 0;
+  width: 30%;
+}
+
+.Input-label {
+  display: block;
+  transition: all .5s linear; color:grey;
+}
+
+
+.Input-text:placeholder-shown + .Input-label,
+.Input-text:invalid + .Input-label {
+  opacity:0;
+  visibility:hidden;
+}
+
+
+.Input-text:placeholder-shown:not + .Input-label,
+.Input-text:valid + .Input-label{
+  color:grey;
+  opacity: 1;
+  visibility:visible;   
+}
+
+
+.Input-text:focus + .Input-label {
+color:blue;
+}
+
+Input-text:focus:not + .Input-label{
+color:grey;
+}
+
+
+.Input-text:focus{
+transition: all .5s linear; box-shadow:0 0 20px blue;
+}
+
+  
+.button{
+background:white;
+color:black;
+font-size:7;
+}
+
+
