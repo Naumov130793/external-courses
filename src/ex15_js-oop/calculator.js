@@ -5,29 +5,29 @@ var calculator = function() {
 calculator.prototype.add = function(variable) {
   if (arguments.length !== 0) {
     this.result += variable;
-    return this;
   }
+  return this;
 };
 
 calculator.prototype.subtract = function(variable) {
   if (arguments.length !== 0) {
     this.result -= variable;
-    return this;
   }
+  return this;
 };
 
 calculator.prototype.divide = function(variable) {
   if (arguments.length !== 0) {
     this.result /= variable;
-    return this;
   }
+  return this;
 };
 
 calculator.prototype.multiply = function(variable) {
   if (arguments.length !== 0) {
     this.result *= variable;
-    return this;
   }
+  return this;
 };
 
 (calculator.prototype.getResult = function() {
